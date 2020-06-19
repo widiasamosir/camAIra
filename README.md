@@ -1,0 +1,2 @@
+# camAIra
+Application of Deep Learning Network for Enhance Low Resolution into High Resolution and Restoring Dark Images into Bright and Clear Image. Single Image Super-Resolution using ESRGAN as neural network to enhance Low-Res image into High-res Image. Using FCNN as a neural network for restoring dark images. Deep learning using Tensorflow, Pytorch, and ISR module as a framework model. For deploying model to website, using Flask and Flask Ngrok. Namely camAIra as Image Processing using Artificial Intelligence Technology.
