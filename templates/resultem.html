@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webpage CamAIra</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+    <link href="../static/jumbotron-narrow.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body background = "../static/img/baru1.png">
+
+  <ul>
+    <li style="float:right"><a class="active" href="tentang.html" target="_self">About</a></li>
+    <li style="float:right"><a class="active" href="{{ url_for('home') }}" target="_self">Home</a></li>
+    <div class = "gbr">
+      <img src = "../static/img/camaira.jpg" alt ="camaira" width="25%" height="5%"> 
+      </div>
+  </ul>
+
+
+<div class ="Choose">
+<p class="lead "></p>
+  The result of Camaira :
+</div>
+
+<p class="lead "></p>
+<div class="row">
+    <div class ="column">
+      <img src = "{{url_for('send_image1', fileinput=namainput)}}" alt ="input" style = "width: 100%">
+    </div>
+
+    <div class ="columndua">
+      <img src = "{{url_for('send_hasilfitur1', filename=keluar)}}" alt ="output" style = "width: 100%">
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+      <div class ="pilih">
+        <p style="text-align:center;">Dark Image</p>
+      </div>
+    </div>
+
+    <div class="columndua">
+      <div class ="pilih">
+    <p style="text-align:center;">Bright Image</p>
+      </div>
+    </div>    
+</div>
+
+<div class="row text-center">
+    <div class="row">
+
+    <form action="{{ url_for('unduh', filename=keluar)}}"method="GET" enctype="multipart/form-data">
+    <button type="download" class="text-align:center btn btn-lg btn-success">Download Bright Photo </button>
+
+    </div>    
+</div>
+
+
+
+</body>
+
+</html>

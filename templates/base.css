@@ -1,0 +1,230 @@
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+  }
+}
+
+{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-image : url('baru1.png');
+
+}
+
+
+* {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  box-sizing: border-box;
+}
+
+
+.column {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+/* Clearfix (clear floats) */
+
+.row::after {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+
+li a {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.gbr {
+
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-top: 0px;
+}
+
+.Choose {
+
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  font-family: Cambria;
+  background-color: #ffe4e4;
+  text-align:center;
+  border:10px ;
+  border-radius: 10px;
+  margin-left:  30%;
+  margin-right: 30%;
+  font-weight: bold;
+  font-size:25px;
+  letter-spacing: 2px;
+
+}
+
+
+
+.pilih {
+
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  font-family: Cambria;
+  background-color: #ffe4e4;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size:20px;
+
+}
+
+.vline {
+
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-left: 6px solid black;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 250px;
+}
+
+
+.center {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display: block;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+}
+.kupu1 {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.jumbotron {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  color: inherit;
+}
+.jumbotron p {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.jumbotron .container {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  max-width: 100%;
+}

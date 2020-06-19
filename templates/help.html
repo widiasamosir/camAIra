@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HELP</title>
+     <link rel="stylesheet" type="text/css" href="../static/css/help.css">
+     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+
+<style>
+.form{
+	padding:30px;
+	width:50%;
+	margin:0 auto;
+	color:#fff;
+	margin-top:30px;
+	border:1px solid #FF9656;
+	border-radius: 5px;
+	background-color: #5e5959;
+}
+.hedding-title{
+	font-size:25px;
+	text-align: center;
+}
+.hedding-title h1{
+	margin:0px;
+	color:#eb3592;
+	font-weight: normal;
+}
+.hedding-description{
+	text-align: center;
+	font-size : 20px;
+}
+.form-input input,
+.form-input textarea{
+	width:100%;
+	margin: 15px 0px;
+	font-size:18px;
+	font-family:"Arial",sans-serif;
+	border-radius: 0px;
+	border: 1px solid #c1c1c1;
+}
+.button{
+	padding:8px 0px;
+	width: 100%;
+	margin-top:15px;
+	background-color:#eb3592;
+	border: none;
+	color: #fff;
+}
+@media (min-width:320px) and (max-width:640px){
+	.form{
+		width:80%;
+	}
+}
+@media (min-width:768px) and (max-width:1024px){
+	.form{
+		width:60%;
+	}
+}
+
+</style>
+</head>
+<body background = "../static/img/baru1.png">
+	<div class="form ">
+		<div class="hedding-title">
+			<h1>Contact Us</h1>
+		</div>
+
+		<div class="hedding-description">
+			<p>Contact us if you have any questions, concerns or comments about our CamAIra WebPage</p>
+		</div>
+
+		<div class="form-input">
+			<form method="POST" action="">
+				Full Name:<br>
+				<input type="text" placeholder="Full name..." name="full_name"><br>
+				Email:<br>
+				<input type="Email" placeholder="example@mail.com" name="email" ></br>
+				Message:<br>
+				<textarea rows="4" input type="text" placeholder="Message.." name="message" ></textarea>
+				<button class="button" input type="submit">Send Message</button>
+			</form> 
+		</div>
+	</div>
+</body>
+</html>

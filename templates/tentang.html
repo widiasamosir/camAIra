@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+ <ul>
+    <li style="float:right"><a class="active btn"  href="{{ url_for('about') }}"  >About</a></li>
+    <li style="float:right"><a class="active" href="{{ url_for('home') }}" target="_self">Home</a></li>
+  </ul>
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  background-image: url("../static/img/pinkblue.jpeg");
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../static/img/camairabout.jpg");
+  margin-top: 100px;
+  min-height: 60%;
+}
+
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+
+
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-large">
+
+<!-- About Container -->
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"> ABOUT CAMAIRA</span></h5>
+     <div class="w3-panel w3-leftbar w3-light-grey w3-center ">
+    <p><strong>"Camaira" is taken from the word "Camera", which is what our project is generally about, and because we use AI for the project, we slip the “AI” word in between, so it became Cam-A-I-ra, and it’s read Camaira.</strong></p>
+
+    <img src="../static/img/awalan.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FEATURES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink"><strong>Brighten Up Dark Image</strong></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink"><strong>Enhance Image Resolution</strong></div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card w3-center w3-light-grey" >
+      <h5><strong>Brighten Up Dark Image</strong></h5>
+      <p class="w3-text-grey">In the age of smartphone cameras, low-light photography is a must have. Most low-light photography use traditional denoising and deblurring techniques which are effective for removing some noise but fail in extreme conditions like darkness, which is a big challenge. Our objective is make it possible to obtain a proper photograph even in an extremely low light conditions. This feature can be useful to overcome one of photography community's challenge: night photography. This feature can also be useful for daily photographs to obtain ideal pictures without worrying about lighting conditions.</p><br>
+      <p><strong> Insert Image File Format :</strong> RAW </p>
+      <p><strong> Image File Format Result :</strong> PNG</p><br>
+
+      <img src="../static/img/fotofitur1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card w3-center w3-light-grey" >
+      <h5><strong>Enhance Image Resolution</strong></h5>
+      <p class="w3-text-grey">Super resolution generated using ESRGAN mode by training amount of images data into a weight. This weight used to deploy to a predict test function. This is the user interface for recovery images from low-resolution images to high-resolution images.</p><br>
+      <p><strong> Insert Image File Format :</strong>  All image format (png, jpg, jpeg, bmp, etc) </p>
+      <p><strong> Image File Format Result :</strong> All image format (png, jpg, jpeg, bmp, etc) </p><br>
+
+      <img src="../static/img/fotofitur2.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+  
+    </div>  
+
+    
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
