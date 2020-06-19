@@ -19,5 +19,8 @@ python setup.py install
 ```
 - Install Environment Needed by conda or pip
 - Or Run install command in flask.ipynb 
+note: checkpoint folder can be download with link below
+https://drive.google.com/drive/folders/1obbRT9vlYMGeGQAEJs2v-6ScZqb0R1bu?usp=sharing
+
 - Run flask.ipynb to using public URL by Flask Ngrok framework
 - Click at ngrok.io URL to see the result
